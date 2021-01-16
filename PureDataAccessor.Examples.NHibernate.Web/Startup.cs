@@ -25,6 +25,14 @@ namespace PureDataAccessor.Examples.NHibernate.Web
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(
+                    builder =>
+                    {
+                        builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+                    });
+            });
             services.AddControllers();
             services.AddNHibernatePureDataAccessor<User>(_configuration.GetConnectionString("DefaultConnectionString"));
         }
@@ -36,6 +44,7 @@ namespace PureDataAccessor.Examples.NHibernate.Web
                 app.UseDeveloperExceptionPage();
             }
             app.UseRouting();
+            app.UseCors();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

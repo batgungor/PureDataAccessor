@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\PureDataAccessor.Examples.Base\PureDataAccessor.Examples.Base.csproj" />
     <ProjectReference Include="..\PureDataAccessor.Examples.Models\PureDataAccessor.Examples.Models.csproj" />
     <ProjectReference Include="..\PureDataAccessor.NHibernate\PureDataAccessor.NHibernate.csproj" />
     <ProjectReference Include="..\PureDataAccessor\PureDataAccessor.csproj" />

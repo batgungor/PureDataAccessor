@@ -3,27 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using PureDataAccessor.Examples.NHibernate.Web.Models;
 using PureDataAccessor.Examples.Models;
 using PureDataAccessor.UnitOfWork;
 
 namespace PureDataAccessor.Examples.NHibernate.Web.Controllers
 {
     [Route("api/[controller]")]
-    public class CompanyController : Controller
+    public class CompanyController : PureDataAccessor.Examples.Base.Controllers.CompanyController
     {
-        public readonly IUnitOfWork _unitOfWork;
-        public CompanyController(IUnitOfWork unitOfWork)
+        public CompanyController(IUnitOfWork unitOfWork) : base(unitOfWork)
         {
-            _unitOfWork = unitOfWork;
-        }
-
-        [HttpGet]
-        public IActionResult Get()
-        {
-            var companyRepo = _unitOfWork.GetRepository<Company>();
-            var companies = companyRepo.GetAll();
-            return Ok(companies);
         }
 
     }

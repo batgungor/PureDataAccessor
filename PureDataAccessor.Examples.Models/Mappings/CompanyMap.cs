@@ -12,7 +12,6 @@ namespace PureDataAccessor.Examples.Models.Mappings
         public CompanyMap()
         {
             Map(p => p.Name).Nullable();
-            Map(p => p.Surname).Nullable();
         }
     }
 }

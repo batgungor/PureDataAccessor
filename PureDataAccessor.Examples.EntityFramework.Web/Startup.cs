@@ -6,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using PureDataAccessor.EntityFrameworkCore.Implementation;
 using PureDataAccessor.EntityFrameworkCore;
+using PureDataAccessor.Examples.Models;
 
 namespace PureDataAccessor.Examples.EntityFramework.Web
 {
@@ -20,6 +21,15 @@ namespace PureDataAccessor.Examples.EntityFramework.Web
 
         public void ConfigureServices(IServiceCollection services)
         {
+            var connectionString = _configuration.GetConnectionString("DefaultConnectionString");
+            services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(
+                    builder =>
+                    {
+                        builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+                    });
+            });
             services.AddControllers().AddNewtonsoftJson(options =>
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 
@@ -33,6 +43,7 @@ namespace PureDataAccessor.Examples.EntityFramework.Web
                 app.UseDeveloperExceptionPage();
             }
             app.UseRouting();
+            app.UseCors();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

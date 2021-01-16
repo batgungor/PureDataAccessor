@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Text;
 
-namespace PureDataAccessor.Examples.NHibernate.Web.Models
+namespace PureDataAccessor.Examples.Models.ViewModels
 {
     public class UserModel
     {
@@ -13,6 +12,7 @@ namespace PureDataAccessor.Examples.NHibernate.Web.Models
         public string Name { get; set; }
         [Required(ErrorMessage = "User's Surname is required")]
         public string Surname { get; set; }
+
         public int? CompanyId { get; set; }
     }
 }

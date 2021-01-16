@@ -29,9 +29,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PureDataAccessor.Examples.N
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PureDataAccessor.Extensions", "PureDataAccessor.Extensions\PureDataAccessor.Extensions.csproj", "{B9374271-9FB6-4693-9C79-7CB0CAAAE9AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PureDataAccessor.NHibernate", "PureDataAccessor.NHibernate\PureDataAccessor.NHibernate.csproj", "{80AF3A3F-33BB-461C-817C-CC29801EFB3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PureDataAccessor.NHibernate", "PureDataAccessor.NHibernate\PureDataAccessor.NHibernate.csproj", "{80AF3A3F-33BB-461C-817C-CC29801EFB3D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PureDataAccessor.Models", "PureDataAccessor.Models\PureDataAccessor.Models.csproj", "{3392ECF7-E71D-482B-9589-F2E5EDDA0070}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PureDataAccessor.Examples.Base", "PureDataAccessor.Examples.Base\PureDataAccessor.Examples.Base.csproj", "{7B14A8A5-DBAA-41AF-965F-8C0BBD80FF9B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -79,6 +81,10 @@ Global
 		{3392ECF7-E71D-482B-9589-F2E5EDDA0070}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3392ECF7-E71D-482B-9589-F2E5EDDA0070}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3392ECF7-E71D-482B-9589-F2E5EDDA0070}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B14A8A5-DBAA-41AF-965F-8C0BBD80FF9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B14A8A5-DBAA-41AF-965F-8C0BBD80FF9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B14A8A5-DBAA-41AF-965F-8C0BBD80FF9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B14A8A5-DBAA-41AF-965F-8C0BBD80FF9B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -94,6 +100,7 @@ Global
 		{099BA0D8-40CB-4BCF-9F83-953AD16C3AC9} = {382D3145-31CB-4556-94CA-D34C44CDFED0}
 		{B9374271-9FB6-4693-9C79-7CB0CAAAE9AD} = {4E9A64A7-8F16-48C9-A190-1BCC08533106}
 		{80AF3A3F-33BB-461C-817C-CC29801EFB3D} = {1B016174-B494-43C3-A2D9-3871F38192D7}
+		{7B14A8A5-DBAA-41AF-965F-8C0BBD80FF9B} = {98A0DE84-3BF5-443B-96A7-AE7BF6210B6C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F5B1E9A2-779D-4272-A156-37D0308B7684}
