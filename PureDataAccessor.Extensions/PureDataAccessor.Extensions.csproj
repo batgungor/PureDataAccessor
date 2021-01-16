@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>The PureDataAccessor's Extension tools</Description>
+    <Authors>Batuhan Güngör</Authors>
+    <PackageId>PureDataAccessor.Extensions</PackageId>
+    <Version>1.0.0.0</Version>
+    <Company>Batuhan Güngör</Company>
+    <Copyright>Batuhan GÜNGÖR 2020</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>PureDataAccessor</PackageTags>
+    <NeutralLanguage>en</NeutralLanguage>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PureDataAccessor.Models\PureDataAccessor.Models.csproj" />
+  </ItemGroup>
+
+</Project>

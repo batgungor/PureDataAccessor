@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Batuhan GÜNGÖR</Authors>
+    <Company>Batuhan GÜNGÖR</Company>
+    <Description>The Pure Data Accessor's NHibernate implemention package</Description>
+    <Copyright>Batuhan GÜNGÖR 2020</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <NeutralLanguage>en</NeutralLanguage>
+    <PackageReleaseNotes>This NHibernate implementation only use MSSql server for now. Next releases will include different type DB implementations.</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentNHibernate" Version="3.1.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
+    <PackageReference Include="NHibernate" Version="5.3.5" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PureDataAccessor.Extensions\PureDataAccessor.Extensions.csproj" />
+    <ProjectReference Include="..\PureDataAccessor\PureDataAccessor.csproj" />
+  </ItemGroup>
+
+</Project>

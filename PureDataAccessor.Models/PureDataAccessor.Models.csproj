@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <Authors>Batuhan GÜNGÖR</Authors>
+    <Description>Pure Data Accessor Model</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <NeutralLanguage>en</NeutralLanguage>
+    <Copyright>Batuhan GÜNGÖR 2020</Copyright>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+</Project>

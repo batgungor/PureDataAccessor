@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PureDataAccessor.Examples.Models\PureDataAccessor.Examples.Models.csproj" />
+    <ProjectReference Include="..\PureDataAccessor.NHibernate\PureDataAccessor.NHibernate.csproj" />
+    <ProjectReference Include="..\PureDataAccessor\PureDataAccessor.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Shared\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.0.0" />
+  </ItemGroup>
+
+</Project>

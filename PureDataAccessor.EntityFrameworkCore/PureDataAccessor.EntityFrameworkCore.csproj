@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Batuhan GÜNGÖR</Authors>
+    <Description>The Pure Data Accessor's EntityFrameworkCore implemention package</Description>
+    <PackageReleaseNotes>This entity framework implementation only use MSSql server for now. Next releases will include different type DB implementations.</PackageReleaseNotes>
+    <NeutralLanguage>en</NeutralLanguage>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PureDataAccessor.Extensions\PureDataAccessor.Extensions.csproj" />
+    <ProjectReference Include="..\PureDataAccessor\PureDataAccessor.csproj" />
+  </ItemGroup>
+
+</Project>
