@@ -7,19 +7,15 @@ using System;
 
 namespace PureDataAccessor.Examples.EntityFramework.DAL
 {
-    public class ExampleContext : PDAContext
+    public class ExampleContext<T> : PDAContext<T>
     {
-        private readonly string _connectionString;
-        private readonly IConfiguration _configuration;
-        public ExampleContext(IConfiguration configuration) : base(typeof(User).Assembly)
+        public ExampleContext(DbContextOptions<PDAContext<T>> options) : base(options)
         {
-            _configuration = configuration;
-            _connectionString = _configuration.GetConnectionString("DefaultConnectionString");
+
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(_connectionString);
             optionsBuilder.UseLazyLoadingProxies();
         }
         /*

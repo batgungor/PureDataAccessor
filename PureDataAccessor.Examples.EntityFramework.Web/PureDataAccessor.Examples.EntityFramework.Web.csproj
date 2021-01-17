@@ -5,7 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PureDataAccessor.EntityFrameworkCore\PureDataAccessor.EntityFrameworkCore.csproj" />
     <ProjectReference Include="..\PureDataAccessor.Examples.Base\PureDataAccessor.Examples.Base.csproj" />
     <ProjectReference Include="..\PureDataAccessor.Examples.EntityFramework.DAL\PureDataAccessor.Examples.EntityFramework.DAL.csproj" />
   </ItemGroup>
