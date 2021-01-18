@@ -27,9 +27,9 @@ implementation examples :
 			services.AddEFPureDataAccessor<PDAContext<User>>("Server=servername;Database=dbname;Trusted_Connection=True;");
 - Ready to use!
 
-###Using on business layer
+### Using on business layer
 
-	  public class UserController : Controller
+	public class UserController : Controller
     {
         protected readonly IUnitOfWork _unitOfWork;
         public UserController(IUnitOfWork unitOfWork)
