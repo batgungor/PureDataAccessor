@@ -13,9 +13,9 @@ The "PureDataAccessor" is a data accesing library which only needs a connection 
 implementation examples : 
 1-)Use custom DBcontext
 	- example 1 ->Use default PDAconnectionstring: You should add "PDAConnectionString" to your appconfig -> connection strings
-			services.AddEFPureDataAccessor<ExampleContext<User>>(_configuration);
+	services.AddEFPureDataAccessor<ExampleContext<User>>(_configuration);
 	- example 2 ->Use custom named connectionString:
-			services.AddEFPureDataAccessor<ExampleContext<User>>(_configuration,"connectionStringName");
+	services.AddEFPureDataAccessor<ExampleContext<User>>(_configuration,"connectionStringName");
 	- example 3 ->Use connection string directly
 			services.AddEFPureDataAccessor<ExampleContext<User>>("Server=servername;Database=dbname;Trusted_Connection=True;");
 2-)Use default PDAContext
