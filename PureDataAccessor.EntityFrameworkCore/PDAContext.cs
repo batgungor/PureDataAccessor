@@ -5,12 +5,17 @@ using System.Linq;
 using System.Reflection;
 namespace PureDataAccessor.EntityFrameworkCore
 {
-    public class PDAContext<T> : DbContext, IDbContext
+    public class PDAContext : DbContext, IDbContext
     {
         private readonly Assembly _entityAssembly;
-        public PDAContext(DbContextOptions<PDAContext<T>> options) : base(options)
+        public PDAContext(Assembly entityAssembly)
         {
-            _entityAssembly = typeof(T).Assembly;
+            _entityAssembly = entityAssembly;
+        }
+
+        public PDAContext()
+        {
+
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
